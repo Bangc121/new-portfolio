@@ -61,7 +61,7 @@ export default function ContactForm() {
         className="w-full flex flex-col gap-2 my-4 p-4 rounded-md text-white"
       >
         <label htmlFor="from" className="font-semibold text-black">
-          Your Email
+          보내는 분
         </label>
         <input
           type="email"
@@ -74,7 +74,7 @@ export default function ContactForm() {
           className="text-black w-full border-2 border-gray-200 rounded-lg py-2 px-4 mb-4 focus:outline-none"
         />
         <label htmlFor="subject" className="font-semibold text-black">
-          Subject
+          제목
         </label>
         <input
           type="text"
@@ -86,7 +86,7 @@ export default function ContactForm() {
           className="text-black w-full border-2 border-gray-200 rounded-lg py-2 px-4 mb-4 focus:outline-none"
         />
         <label htmlFor="message" className="font-semibold text-black">
-          Message
+          메시지
         </label>
         <textarea
           rows={10}
@@ -97,8 +97,8 @@ export default function ContactForm() {
           onChange={onChange}
           className="text-black w-full border-2 border-gray-200 rounded-lg py-2 px-4 mb-4 focus:outline-none"
         />
-        <button className="bg-slate-300 text-black font-bold hover:bg-slate-400 p-3 rounded-md">
-          Submit
+        <button className="bg-teal-200 text-black hover:bg-teal-400 p-3 rounded-md">
+          보내기
         </button>
       </form>
     </section>

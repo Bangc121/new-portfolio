@@ -15,8 +15,8 @@ export default async function sendEmail({ from, subject, message }: EmailForm) {
   const mailData = {
     from,
     to: process.env.EMAIL_USER,
-    subject: `[BLOG] ${subject}`,
-    html: "<b>Hello world?</b>",
+    subject: subject,
+    html: message,
   };
 
   return transporter.sendMail(mailData);

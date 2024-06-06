@@ -48,18 +48,9 @@ export const metadata: Metadata = {
 export default function ContactPage() {
   return (
     <section className="w-full max-w-4xl flex flex-col items-center">
-      <h2 className="text-3xl font-bold my-2 mt-10">Contact Me</h2>
+      <h2 className="text-3xl font-bold my-2 mt-10">🤳 Contact Me</h2>
       <div className="w-full flex flex-row mt-5">
-        <div className="w-full basis-1/3 flex items-center mr-5">
-          <ul className="w-full flex my-2 flex-col">
-            {CONTACT_INFO.map((link, index) => (
-              <li key={index}>
-                <ContactInfoCard contactInfo={link} />
-              </li>
-            ))}
-          </ul>
-        </div>
-        <div className="w-full basis-2/3">
+        <div className="w-full max-w-xl mx-auto">
           <ContactForm />
         </div>
       </div>

@@ -5,7 +5,7 @@ type Props = {
   size?: "small" | "medium" | "large" | "xlarge";
 };
 export default function Avatar({
-  image = "/images/profile.jpeg",
+  image = "/images/test.jpg",
   size = "xlarge",
 }: Props) {
   return (
@@ -32,7 +32,7 @@ function getImageSizeStyle(size: Props["size"]): string {
     case "large":
       return "w-16 h-16";
     case "xlarge":
-      return "w-[230px] h-[230px]";
+      return "w-[240px] h-[240px]";
     default:
       throw new Error(`Invalid size: ${size}`);
   }
