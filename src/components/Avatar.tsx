@@ -19,7 +19,7 @@ export default function Avatar({
       /> */}
       <Image
         src={"/images/test.jpg"}
-        alt="img"
+        alt="imgqweqwe"
         priority
         width={100}
         height={100}
