@@ -13,7 +13,7 @@ export default function Home() {
         priority
         fill
       />
-      <div className="flex absolute z-10 inset-0 justify-center items-center">
+      <div className="flex absolute z-10 inset-0 flex-col md:flex-row justify-center items-center ">
         <div className="flex justify-center items-center pr-32">
           <Introduction />
         </div>
