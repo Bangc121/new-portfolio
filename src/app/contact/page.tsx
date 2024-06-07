@@ -7,7 +7,6 @@ import {
 } from "react-icons/ai";
 
 import ContactForm from "@/components/ContactForm";
-import ContactInfoCard from "@/components/ContactInfoCard";
 import { Metadata } from "next";
 
 const CONTACT_INFO = [

@@ -13,7 +13,7 @@ type Project = {
   title: string;
   period: string;
   skills: string[];
-  description: string;
+  description: string[];
   url?: string;
   video?: string;
 };
@@ -28,8 +28,7 @@ const experiences = [
         title: "UNIC",
         period: "2024.02 - 2024.05",
         skills: ["react-native", "typeScript", "recoil", "react-query"],
-        description: "외주 프로젝트 앱 초기 설계 및 개발",
-        url: "https://x.com/0xUNIC",
+        description: ["외주 프로젝트 앱 초기 설계 및 개발"],
         video: "/videos/high.mp4",
       },
     ],
@@ -53,13 +52,15 @@ const experiences = [
           "github actions",
           "sentry",
         ],
-        description: "닥터히어 Primary Care 서비스 신규런칭 및 유지보수",
+        description: ["닥터히어 Primary Care 서비스 신규런칭 및 유지보수"],
+        video:
+          "https://video.wixstatic.com/video/05ae64_6bebe0488db048de9c5cf0f34d08d4b2/1080p/mp4/file.mp4",
       },
       {
         title: "닥터히어(원격진료 서비스)",
         period: "2022.10 - 2023.02",
         skills: ["react-native", "typescript"],
-        description: "닥터히어 원격진료서비스 유지보수 및 신규기능 개발",
+        description: ["닥터히어 원격진료서비스 유지보수 및 신규기능 개발"],
       },
     ],
     description: "Worked on the Facebook News Feed team.",
@@ -79,7 +80,7 @@ const experiences = [
           "redux-toolkit",
           "styled-components",
         ],
-        description: "외주 프로젝트 앱 초기 설계 및 개발",
+        description: ["외주 프로젝트로 사내 공지 앱 개발"],
       },
     ],
     description: "Worked on the Facebook News Feed team.",
@@ -100,8 +101,11 @@ const experiences = [
           "styled-components",
           "codepush",
         ],
-        description:
+        description: [
+          "신규프로젝트 앱 초기 설계 및 개발",
           "🏆 구글플레이가 선정한 '2021 올해를 빛낸 자기계발 앱' 부문에서 최우수상",
+        ],
+        video: "https://www.youtube.com/watch?v=X1ZKt5QO12g",
       },
     ],
     description:
@@ -116,14 +120,8 @@ const experiences = [
       {
         title: "Fillgi",
         period: "2024.02 - 2024.05",
-        skills: [
-          "React",
-          "TypeScript",
-          "GraphQL",
-          "Apollo Client",
-          "Tailwind CSS",
-        ],
-        description: "Working on the Facebook News Feed team.",
+        skills: ["react-native", "javascript", "android", "ios", "AWS"],
+        description: ["신규프로젝트 앱 초기 설계 및 개발"],
       },
     ],
     description: "Worked on the Google Search team.",

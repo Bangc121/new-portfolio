@@ -1,10 +1,11 @@
 import "./globals.css";
 
-import { Inter } from "next/font/google";
+import { Inter, Open_Sans } from "next/font/google";
+
 import type { Metadata } from "next";
 import Navbar from "@/components/Navbar";
 
-const inter = Inter({ subsets: ["latin"] });
+const openSans = Open_Sans({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "JH's Portfolio",
@@ -17,7 +18,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={inter.className}>
+    <html lang="en" className={openSans.className}>
       <body className="w-full">
         <header>
           <div className="max-w-screen-xl mx-auto">
