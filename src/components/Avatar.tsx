@@ -14,7 +14,7 @@ export default function Avatar({
       <img
         className={`bg-white object-cover rounded-full w-[242px] h-[242px]`}
         alt="user profile"
-        src={image ?? undefined}
+        src={"/images/test.jpg"}
         referrerPolicy="no-referrer" // x박스 이슈 해결
       />
     </div>
