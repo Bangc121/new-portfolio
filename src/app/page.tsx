@@ -19,8 +19,8 @@ export default function Home() {
         </div>
         <div className="flex items-center">
           <Image
-            src={"/images/test.jpg"}
-            alt="img"
+            src={"/images/background.jpg"}
+            alt="imgee"
             priority
             width={100}
             height={100}
