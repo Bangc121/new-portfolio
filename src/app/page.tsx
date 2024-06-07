@@ -18,6 +18,13 @@ export default function Home() {
           <Introduction />
         </div>
         <div className="flex items-center">
+          <Image
+            src={"/images/test.jpg"}
+            alt="img"
+            priority
+            width={100}
+            height={100}
+          />
           <Avatar />
         </div>
       </div>
