@@ -1,7 +1,7 @@
 import Image from "next/image";
 
 type Props = {
-  image?: string | null;
+  image?: string;
   size?: "small" | "medium" | "large" | "xlarge";
 };
 export default function Avatar({
@@ -9,15 +9,18 @@ export default function Avatar({
   size = "xlarge",
 }: Props) {
   return (
-    <div>
+    <div
+      className={`relative bg-white rounded-full ${getImageSizeStyle(size)}`}
+    >
       {/* eslint-disable-next-line @next/next/no-img-element */}
-      <img
-        className={`bg-white object-cover rounded-full ${getImageSizeStyle(
-          size
-        )}`}
+      <Image
         alt="profile"
-        src={image ?? undefined}
-        referrerPolicy="no-referrer" // x박스 이슈 해결
+        src={image}
+        fill
+        priority
+        className="rounded-full"
+        sizes="100%"
+        style={{ objectFit: "cover" }}
       />
     </div>
   );

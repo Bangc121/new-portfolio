@@ -10,6 +10,7 @@ export default function Home() {
         className="opacity-25 z-0"
         src={"/images/background.jpg"}
         alt="img"
+        priority
         fill
       />
       <div className="flex absolute z-10 inset-0 justify-center items-center">
