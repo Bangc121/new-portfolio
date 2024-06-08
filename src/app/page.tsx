@@ -26,7 +26,7 @@ export default function Home() {
             height={100}
           />
           <Image
-            src={"/images/test.jpg"}
+            src={"/images/profile.jpeg"}
             alt="imgewefwefe"
             priority
             width={100}
