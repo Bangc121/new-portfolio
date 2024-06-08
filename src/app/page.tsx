@@ -31,6 +31,13 @@ export default function Home() {
             priority
             width={100}
             height={100}
+          />{" "}
+          <Image
+            src={"/images/profile.jpg"}
+            alt="imgewefwefe"
+            priority
+            width={100}
+            height={100}
           />
           <Avatar />
         </div>
